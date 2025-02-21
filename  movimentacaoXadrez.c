@@ -2,7 +2,7 @@
 
 int main(){
     //criacao das variaveis
-    int bispo, torre, rainha;
+    int bispo = 0, torre = 0, rainha = 0;
     //movimentacao do bispo
     printf("--------------------\n");
     for(bispo = 1; bispo <= 5; bispo++){
@@ -10,13 +10,15 @@ int main(){
     }
     //movimentacao da torre
     printf("--------------------\n");
-    for(torre = 1; torre <= 5; torre++){
+    do{
         printf("Torre, direita\n");
-    }
+        torre++;
+    }while(torre < 5);
     //movimentacao da rainha
     printf("--------------------\n");
-    for(rainha = 1; rainha <= 8; rainha++){
+    while(rainha < 8){
         printf("Rainha, esquerda\n");
+        rainha++;
     }
     printf("--------------------\n");
 
